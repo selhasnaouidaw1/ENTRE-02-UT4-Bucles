@@ -1,19 +1,19 @@
-/**
+/**import java.util.Random;
  *    @author - 
  */
 public class DemoBucles
 {
     private final char ASTERISCO = '*';
     private final char ESPACIO = ' ';
-    private Random random;
+    // private Random generador;
 
     /**
      * Constructor  
      */
-    public DemoBucles()
-    {
-       random = new Random();
-    }
+    // public DemoBucles()
+    // {
+       // generador= new Random();
+    // }
 
     /**
      * Calcular la mayor potencia de 2 que es menor o igual a numero
@@ -29,8 +29,8 @@ public class DemoBucles
     public int mayorPotencia2(int numero) {
         int i= 1;
         int res = 0;
-        while(Math.pow(2,i) <= numero){
-            res = Math.pow(2,i);
+        while((int)Math.pow(2,i) <= numero){
+            res = (int)Math.pow(2,i);
             i++;
             
         
