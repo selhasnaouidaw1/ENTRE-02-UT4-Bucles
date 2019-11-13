@@ -1,19 +1,22 @@
-/**import java.util.Random;
+
+
+/**
  *    @author - 
  */
+import java.util.Random;
 public class DemoBucles
 {
     private final char ASTERISCO = '*';
     private final char ESPACIO = ' ';
-    // private Random generador;
+    private Random generador;
 
     /**
      * Constructor  
      */
-    // public DemoBucles()
-    // {
-       // generador= new Random();
-    // }
+    public DemoBucles()
+    {
+       generador= new Random();
+    }
 
     /**
      * Calcular la mayor potencia de 2 que es menor o igual a numero
@@ -56,8 +59,14 @@ public class DemoBucles
      *  64 =    64
      */
     public void escribirSumaPotencias(int numero) {
-
-         
+       int i = 0;
+       while(numero != 0){
+           i = mayorPotencia2(numero);
+           numero = numero - i;
+           System.out.printf("%1d =" , numero);
+           
+        
+        }  
 
     }
 
@@ -73,8 +82,14 @@ public class DemoBucles
      * 
      */
     public void generarAleatorios(int n) {
-
-       
+    int i = 0;
+    int numero = 0;
+    while (numero == 255 || i == n){
+        numero = generador.nextInt(255);
+        escribirSumaPotencias(numero);
+        i++;
+    
+    }
 
     }
 
@@ -85,7 +100,11 @@ public class DemoBucles
      */
     public void escribirCaracter(int n, char caracter)
     {
-         
+        
+        for(int i = 0; i<n; i++){
+            System.out.print(caracter);
+            
+        }
     }
 
     /**
