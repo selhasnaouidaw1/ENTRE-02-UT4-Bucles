@@ -114,10 +114,19 @@ public class DemoBucles
      *   Usa bucles for
      */
     public  void mostrarEscalera(int escalones, int alto, int ancho) {
-        System.out.println();
-
-         
+      
+        for (int i = 0; i<escalones; i++){
+        for (int j = 0; j<alto; j++){
+            escribirCaracter(ancho, '*');
+        }
+        System.out.print("\n");
 
     }
+
+
+    
+         
+
+    
 
 }
