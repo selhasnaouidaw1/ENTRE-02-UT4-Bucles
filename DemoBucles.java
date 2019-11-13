@@ -5,13 +5,14 @@ public class DemoBucles
 {
     private final char ASTERISCO = '*';
     private final char ESPACIO = ' ';
+    private Random random;
 
     /**
      * Constructor  
      */
     public DemoBucles()
     {
-       
+       random = new Random();
     }
 
     /**
@@ -26,8 +27,16 @@ public class DemoBucles
      *  Usa bucles while
      */
     public int mayorPotencia2(int numero) {
+        int i= 1;
+        int res = 0;
+        while(Math.pow(2,i) <= numero){
+            res = Math.pow(2,i);
+            i++;
+            
         
-        return 0;
+        }
+        return res;
+        
 
     }
 
