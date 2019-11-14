@@ -58,11 +58,11 @@ public class DemoBucles
      *  64 =    64
      */
     public void escribirSumaPotencias(int numero) {
-       int i = 0;
+       int i = mayorPotencia2(numero);
        while(numero != 0){
            i = mayorPotencia2(numero);
            numero = numero - i;
-           System.out.printf("%6d =" , numero);
+           System.out.printf("%6d =" , i);
            
         
         }  
@@ -116,11 +116,12 @@ public class DemoBucles
       
         for (int i = 0; i<escalones; i++){
             for (int j = 0; j<alto; j++){
-            escribirCaracter(ancho, ESPACIO);
+            escribirCaracter(ancho * i, ESPACIO);
             escribirCaracter(ancho, ASTERISCO);
+            System.out.println();
         }
        }
-        System.out.print("\n");
+        
 
     }
 

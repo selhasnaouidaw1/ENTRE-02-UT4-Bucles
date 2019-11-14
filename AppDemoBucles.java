@@ -37,12 +37,13 @@ public class AppDemoBucles
             }
             System.out.println("Error, Teclee tope de aleatorios a generar [10, 15]: ");
             teclado.nextLine();
+            
         }System.out.println("Nºs aleatorios como suma de potencia de 2");
         demo.generarAleatorios(maximoAleatorios);
         System.out.println("Bucle terminado porque se han generado ya " + maximoAleatorios + " aletorios");
         
-Utilidades.hacerPausa();
-Utilidades.borrarPantalla();
+        Utilidades.hacerPausa();
+        Utilidades.borrarPantalla();
     }
 }
 
