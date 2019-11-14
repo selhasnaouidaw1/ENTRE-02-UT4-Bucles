@@ -25,12 +25,20 @@ public class AppDemoBucles
      */
     public static void main(String[] args)
     {
-         Scanner teclado = new Scanner(System.in);
-         DemoBucles demo = new DemoBucles();
-         System.out.println("Introduzca el maximo de aleatorios a generar");
-         int maximoAleatorios= teclado.nextInt();
-         while maximoAleatorios < 10
-         
+        Scanner teclado = new Scanner(System.in);
+        DemoBucles demo = new DemoBucles();
+        System.out.println("Teclee tope de aleatorios a generar [10, 15]: ");
+        int maximoAleatorios= teclado.nextInt();
+        teclado.nextLine();
+        while(maximoAleatorios < 10 || maximoAleatorios > 15){
+            if (maximoAleatorios <= -1){
+                System.out.println("Error, Teclee tope de aleatorios a generar [10, 15]: ");
+                teclado.nextLine();
+            }
+            System.out.println("Error, Teclee tope de aleatorios a generar [10, 15]: ");
+            teclado.nextLine();
+        }maximoAleatorios =
+
     }
 }
 
