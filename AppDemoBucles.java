@@ -26,6 +26,10 @@ public class AppDemoBucles
     public static void main(String[] args)
     {
          Scanner teclado = new Scanner(System.in);
+         DemoBucles demo = new DemoBucles();
+         System.out.println("Introduzca el maximo de aleatorios a generar");
+         int maximoAleatorios= teclado.nextInt();
+         while maximoAleatorios < 10
          
     }
 }
