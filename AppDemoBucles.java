@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  *  @author - 
  *  
@@ -25,6 +25,7 @@ public class AppDemoBucles
      */
     public static void main(String[] args)
     {
+         Scanner teclado = new Scanner(System.in);
          
     }
 }

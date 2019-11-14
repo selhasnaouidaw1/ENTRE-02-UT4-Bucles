@@ -1,9 +1,8 @@
-
+import java.util.Random;
 
 /**
- *    @author - 
+ *    @author - Sarah El Hasnaoui
  */
-import java.util.Random;
 public class DemoBucles
 {
     private final char ASTERISCO = '*';
@@ -102,7 +101,7 @@ public class DemoBucles
     {
         
         for(int i = 0; i<n; i++){
-            System.out.print(caracter);
+            System.out.println(caracter);
             
         }
     }
@@ -116,9 +115,10 @@ public class DemoBucles
     public  void mostrarEscalera(int escalones, int alto, int ancho) {
       
         for (int i = 0; i<escalones; i++){
-        for (int j = 0; j<alto; j++){
+            for (int j = 0; j<alto; j++){
             escribirCaracter(ancho, '*');
         }
+       }
         System.out.print("\n");
 
     }
