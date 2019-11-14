@@ -62,7 +62,7 @@ public class DemoBucles
        while(numero != 0){
            i = mayorPotencia2(numero);
            numero = numero - i;
-           System.out.printf("%1d =" , numero);
+           System.out.printf("%6d =" , numero);
            
         
         }  
@@ -82,10 +82,10 @@ public class DemoBucles
      */
     public void generarAleatorios(int n) {
     int i = 0;
-    int numero = 0;
-    while (numero == 255 || i == n){
-        numero = generador.nextInt(255);
-        escribirSumaPotencias(numero);
+    int numeroAleatorio = 0;
+    while (numeroAleatorio == 255 || i == n){
+        numeroAleatorio = generador.nextInt(255);
+        escribirSumaPotencias(numeroAleatorio);
         i++;
     
     }
@@ -116,7 +116,8 @@ public class DemoBucles
       
         for (int i = 0; i<escalones; i++){
             for (int j = 0; j<alto; j++){
-            escribirCaracter(ancho, '*');
+            escribirCaracter(ancho, ESPACIO);
+            escribirCaracter(ancho, ASTERISCO);
         }
        }
         System.out.print("\n");
