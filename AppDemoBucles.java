@@ -31,19 +31,17 @@ public class AppDemoBucles
         int maximoAleatorios= teclado.nextInt();
         teclado.nextLine();
         while(maximoAleatorios < 10 || maximoAleatorios > 15){
-            if (maximoAleatorios <= -1){
-                System.out.println("Error, Teclee tope de aleatorios a generar [10, 15]: ");
-                teclado.nextLine();
-            }
             System.out.println("Error, Teclee tope de aleatorios a generar [10, 15]: ");
+            maximoAleatorios= teclado.nextInt();
             teclado.nextLine();
-            
+         
         }System.out.println("Nºs aleatorios como suma de potencia de 2");
         demo.generarAleatorios(maximoAleatorios);
         System.out.println("Bucle terminado porque se han generado ya " + maximoAleatorios + " aletorios");
         
         Utilidades.hacerPausa();
         Utilidades.borrarPantalla();
+        
     }
 }
 
